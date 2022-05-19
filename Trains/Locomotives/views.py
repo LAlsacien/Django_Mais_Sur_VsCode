@@ -45,3 +45,6 @@ def delete(request, id):
     locomotives = models.Locomotive.objects.get( pk = id )
     locomotives.delete()
     return HttpResponseRedirect("../../index")
+
+def accueil(request):
+    return render(request, "Locomotives/accueil.html")

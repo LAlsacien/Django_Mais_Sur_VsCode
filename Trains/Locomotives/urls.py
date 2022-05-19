@@ -19,4 +19,6 @@ urlpatterns = [
     path("updatec/<int:id>/", Constructeurs_views.update),
     path("updatetraitementc/<int:id>", Constructeurs_views.updatetraitement),
     path("deletec/<int:id>/", Constructeurs_views.delete),
+# Autre
+    path("accueil/", views.accueil),
 ]
