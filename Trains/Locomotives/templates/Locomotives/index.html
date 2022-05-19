@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+    <h1>Bienvenue !</h1>
+    <a href="/Locomotives/add">Ajouter une locomotive</a>
+    <ol>
+        {% for l in liste %}
+            <li> {{l}} <a href="/Locomotives/affiche/{{l.id}}/">Plus d'information</a><a href="/Locomotives/update/{{l.id}}/">Modifier</a><a href="/Locomotives/delete/{{l.id}}/">Supprimer</a> </li>
+        {% endfor %}
+    </ol>
+</body>
+</html>
