@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>formulaire de saisie</title>
+</head>
+<body>
+    <h1>Modification d'une saisie</h1>
+    <form method="post" action="/Constructeurs/updatetraitement/{{id}}">
+    {% csrf_token %}
+    {{form.as_ul}}
+    <input type="submit" value="envoyez les données"/>
+    </form>
+</body>
+</html>

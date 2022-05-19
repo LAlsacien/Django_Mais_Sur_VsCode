@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+    <h1>Bienvenue !</h1>
+    <a href="/Constructeurs/add">Ajouter un constructeur</a>
+    <ol>
+        {% for c in liste %}
+            <li> {{c}} <a href="/Constructeurs/affiche/{{c.id}}/">Plus d'information</a><a href="/Constructeurs/update/{{c.id}}/">Modifier</a><a href="/Constructeurs/delete/{{c.id}}/">Supprimer</a> </li>
+        {% endfor %}
+    </ol>
+</body>
+</html>

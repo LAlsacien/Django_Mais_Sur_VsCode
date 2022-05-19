@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'Constructeurs.apps.ConstructeursConfig',
     'Locomotives.apps.LocomotivesConfig',
     'django.contrib.admin',
     'django.contrib.auth',
