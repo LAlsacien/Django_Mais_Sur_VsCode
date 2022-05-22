@@ -12,11 +12,14 @@
                 <h2 class=titleheader>Le Projet Django... Les locomotives et les constructeurs</h2>
             </div>
             <div class="header2">
-                <a title="Aller vers 'Les locomotives'" href="#locomotives">Les locomotives</a>
-                <a title="Aller vers 'Les constructeurs'" href="constructeurs">Les constructeurs</a>
+                <a title="Aller vers 'Les locomotives'" href="/Locomotives/index">Les locomotives</a>
+                <a title="Aller vers 'Page d'Accueil'" href="/Locomotives/accueil/">La Page d'Accueil</a>
+                <a title="Aller vers 'Les constructeurs'" href="/Locomotives/indexc">Les constructeurs</a>
             </div>
         </header>
-    {% block content %}
-    {% endblock %}
+        <section>
+            {% block content %}
+            {% endblock %}
+        </section>
     </body>
 </html>

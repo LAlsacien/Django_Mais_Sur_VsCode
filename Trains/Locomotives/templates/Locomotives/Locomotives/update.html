@@ -1,3 +1,5 @@
+{% extends "main.html" %}
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -5,11 +7,13 @@
     <title>formulaire de saisie</title>
 </head>
 <body>
+    {% block content %}
     <h1>Modification d'une saisie</h1>
     <form method="post" action="/Locomotives/updatetraitement/{{id}}">
     {% csrf_token %}
     {{form.as_ul}}
     <input type="submit" value="envoyez les données"/>
     </form>
+    {% endblock %}
 </body>
 </html>

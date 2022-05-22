@@ -1,3 +1,5 @@
+{% extends "main.html" %}
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,12 +7,14 @@
     <title>Index</title>
 </head>
 <body>
-    <h1>Bienvenue !</h1>
+    {% block content %}
+    <h1>Liste des locomotives</h1>
     <a href="/Locomotives/add">Ajouter une locomotive</a>
     <ol>
         {% for l in liste %}
             <li> {{l}} <a href="/Locomotives/affiche/{{l.id}}/">Plus d'information</a><a href="/Locomotives/update/{{l.id}}/">Modifier</a><a href="/Locomotives/delete/{{l.id}}/">Supprimer</a> </li>
         {% endfor %}
     </ol>
+    {% endblock %}
 </body>
 </html>
